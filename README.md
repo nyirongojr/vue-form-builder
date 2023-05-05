@@ -1,186 +1,140 @@
 # vue-form-builder
 [![npm version](https://badge.fury.io/js/v-form-builder.svg)](https://www.npmjs.com/package/v-form-builder)
 [![GitHub license](https://img.shields.io/github/license/sethsandaru/vue-form-builder.svg?style=flat-square)](https://github.com/sethsandaru/vue-form-builder/blob/master/LICENSE) ![img](https://img.shields.io/npm/dm/v-form-builder.svg)
-[![HitCount](http://hits.dwyl.io/sethsandaru/vue-form-builder.svg)](http://hits.dwyl.io/sethsandaru/vue-form-builder)
-[![img](https://img.shields.io/badge/documentation-full-green.svg?longCache=true&style=flat-square)](https://github.com/sethsandaru/vue-form-builder/wiki)
+[![img](https://img.shields.io/badge/documentation-full-green.svg?longCache=true&style=flat-square)](https://phattranminh96.gitbook.io/vue-form-builder/)
 
-A simple form-builder with drag & drop to help you deal your own form. Less code in development and your site will be more generic, configurable.
+A simple builder to help you generate a super form for your features/modules/sites,... Easy to use, create, upgrade, maintain,...
+Why need to code the form when you can use `Vue-Form-Builder` and render it with some extra steps :D
 
 Advantages:
-- Less code in development
-- Wide range of APIs
-- Easily to maintain, update later
-- Easily to config your form (drag & drop, control settings)
-- Extensibility (Extend-able): Help you to import your own Control
-- Validation & Custom Control Validation Supported.
-- ...
+- Less code in development (No need to do `<form> <div> <input> .... </div> </form>` this by your own)
+- Easy to maintain, update your Form in the future.
+- Setup your Form with a super friendly UI/UX.
+- Extensibility (Your custom control, styling,...)
+- Form Validation? I got you fam.
+- Included HTML5 structure, no tricks or cheats.
+- **NO MORE JQUERY INCLUDED**
 
-Fully documentation in this Repo's Wiki. Check it out!
+Give this repo a ⭐ (star) if you actually like this and might use it for your project :D! Thank you!
 
-Give this repo a ⭐ (star) if you actually like this and will use it for your development/production :D! Thank you!
+Feel free to open an issue if you reach any bugs or issues. Thanks.
 
-The library is built & ready for production but if you meet any bugs or issues, feel free to open!
+[Vue Form Builder Documentation](https://phattranminh96.gitbook.io/vue-form-builder/)
 
-Demo Online: http://vue-form-builder.sethphat.com    
-Demo Project: https://github.com/sethsandaru/demo-vue-form-builder
+## Demo
+- Demo Online: [Vue Form Builder ONLINE](https://vue-form-builder.herokuapp.com/)
+- Demo Form (Real Life Example): 
+    - [Vue Form Builder Real Life Example](http://vue-form-builder.sethphat.com/)
+    - Repo: https://github.com/sethsandaru/demo-vue-form-builder
 
-## Current version
-Current latest version of the Vue Form Builder: **1.4.1-rc1**.
+## Supported Browsers
 
-Updated/Features:
-- Update dependencies that got security problem.
-- Placeholder for Sortable (drag n' drop section, row, control to order)
-- Update some CSS, JS
-
-## Technologies/Libraries using
-- Javascript
-- VueJS 2.x
-- Webpack
-- JQuery/JQuery UI
-- Bootstrap 4
-- ...
-
-**Note**: From the version **1.2.0** to above, I don't import bootstrap 4 stylesheet into the bundle, you should include your own bootstrap 4 stylesheet in order
-to get both of GUI & Template working normally.
-
-## Form Builder Structure
-- Template: is where you can config/create/edit your own form.
-![template_config](https://i.imgur.com/Z0jP3sl.gif)
-
-- GUI: is where the form will be built by your configuration.
-![gui_config](https://i.imgur.com/0GbXcec.gif)
-
-For more information please visit this Repo's wiki, thanks :D!
+![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)
+--- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | 9+ ✔ | Latest ✔ | 6.1+ ✔ |
 
 ## How to install?
-Run this command to install:
+
+### NPM / Yarn
 ```php
 npm i v-form-builder --save
 ```
 
-NPMJS: [https://www.npmjs.com/package/v-form-builder](https://www.npmjs.com/package/v-form-builder)
+### Browser
+- Download the Latest [Release](https://github.com/sethsandaru/vue-form-builder/releases)
+```html
+    <link rel="stylesheet" href="v-form-builder.min.css">
 
-**Notes:** 
+    <script src="vue.min.js"></script>
+    <script src="v-form-builder.umd.min.js"></script>
+```
+
+### CDN
+
+#### jsDelivr
+
+Latest version (@2.1.0)
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sethsandaru/vue-form-builder/dist/v-form-builder.min.css"> 
+<script src="https://cdn.jsdelivr.net/gh/sethsandaru/vue-form-builder/dist/v-form-builder.umd.min.js"></script>
+```
+
+## Installation Note
 - For the best experience, please install the latest version!
-- Please don't install the old version below **v1.1.1**. Thank you!
+- Version below **@v2.0.0** has been deprecated. No maintain & fix bugs. Please use 2.0.0 or above.
 
-## How to implement?
+## Documentation
 
-### Import into your project
-1/ Import as global component
-```javascript
-import FormBuilder from 'v-form-builder';
-Vue.component('FormBuilder', FormBuilder);
-```
+[Main Documentation of Vue-Form-Builder](https://phattranminh96.gitbook.io/vue-form-builder/)
 
-2/ Import as single component
-```javascript
-import FormBuilder from 'v-form-builder';
+## How to implement for a beginner?
 
-export default {
-    components: {FormBuilder}
-    ...
-}
-```
+- [Turning Up The Form](https://phattranminh96.gitbook.io/vue-form-builder/getting-started/turning-up-the-form)
+- [Form Builder](https://phattranminh96.gitbook.io/vue-form-builder/getting-started/form-builder-starter)
+- [Form Renderer](https://phattranminh96.gitbook.io/vue-form-builder/getting-started/form-renderer-starter)
 
-**Note:** you should have your own Bootstrap 4 stylesheet imported inside your project in order to use the Form Builder normally.
+### Usage / Use-cases
 
-### Usage
-```php
-<template>
-    <div>
-        // form builder template
-        <form-builder type="template"></form-builder>
-        
-        // form builder gui
-        <form-builder type="gui" :form="yourConfigFormObject"></form-builder>
-    </div>
-</template>
-```
-Binding options:
-- type (String):
-    - Form Config (Template): **template**
-    - Form GUI: **gui**
-- form (Object) - for Form GUI Only, where you passing the configuration data and the Form Builder will build the form by your configuration data.
+[Some of the use-cases I mentioned](https://phattranminh96.gitbook.io/vue-form-builder/use-cases)
 
-#### V-Model for Form Builder Template
-You can use v-model in Form Builder Template, it'll return to you the form configuration data that you're configurated (object) and also render the old configuration and let you edit/update that configuration.
-```php
-<template>
-    <div>
-        <form-builder type="template" v-model="formData"></form-builder>
-    </div>
-</template>
-```
-The form config data would look like this:
-```javascript
-{
-    sections: [...],
-    layout: "...",
-    _uniqueId: "..."
-}
-```
+### APIs / Extending / Hard-core stuff
 
-Ideally, you need to convert that Object to JSON string and then save it in your database :D
+[Visit Documentation](https://phattranminh96.gitbook.io/vue-form-builder/extending/plugin-options)
 
-#### V-Model for Form Builder GUI
-You can use V-Model to get/set values from your built form.
-```php
-<template>
-    <div>
-        <form-builder type="gui" :form="formData" v-model="formValues"></form-builder>
-    </div>
-</template>
-```
-The form values data would look like this:
-```javascript
-{
-    section_key: {
-        control_name_1: "data",
-        control_name_2: 123,
-        ...
-    },
-    ...
-}
-```
+## Dependencies
+I carefully watch the dependencies of the Vue Form Builder, from the version **2.0.0** and above. Here is the list:
 
-### APIs
-Please visit this Repo's Wiki.
+- Vue JS (obviously) - But it won't be built together with the final library bundle
+- vuedraggable: From `Sortable.JS` which is very lightweight and much lighter than JQuery + JQuery UI
+- deep-equal: A simple method to check the Form Configuration
+- Datepicker - LitePicker (Super lightweight, ~5KB): https://wakirin.github.io/Litepicker/
+- DayJS - Parse/Formatting date (2KB): https://day.js.org/en/
+
+See more at: [package.json](./package.json) and look at the `dependencies`
+
+My truly desire: Fewer dependencies as possible and try minimize the size as much as possible.
 
 ## Release notes
-- Version **1.4.0**:
-    - Refactored, the code is more easy to view & read.
-    - Able to extend a custom control.
-    - Fix some minor bugs.
-- Version **1.3.0**:
-    - Milestone 3 released.
-    - Able to validate the form.
-    - Able to styling the label (bold, italic, underline).
-    - Able to set control label position for Section (horizontal or vertical)
-    - Fix some bugs
-    - Constraints for some Hooks
-    - APIs for Validate
-- Version **1.2.1**:
-    - Fix some minor bugs.
-- Version **1.2.0**:
-    - Hooks are available now for both Template & GUI.
-    - More options for controls, like:
-        - Select: Ajax data source (URL)
-        - Date Picker: date format
-        - Time Picker: time format
-    - Update control: 
-        - Number Control to work properly with the decimal places.
-        - Time Picker: change to another time picker with a better APIs + options.
-    - Fix a problem that make the Date Picker icon didn't show.
-    - Stop import Bootstrap 4 CSS into the bundle.
-- Version **1.1.1**:
-    - First Release of Vue Form Builder
-    - Able to config form & render form by config data.
-    - Get/set value for both GUI & Template.
+
+### 2.1.0 
+- Added Tab Section
+- Added Basic Role-based Configuration
+- Added `regex` Validation
+- Fixed bugs
+- Security updated
+
+### 2.0.1
+- Added CSS Classes that worked for Material Design (Thanks to @abhimanusharma)
+- Fixed bugs
+- Security updated
+
+### 2.0.0
+- New structural, new behaviour, everything is new.
+- Less and less ugly code
+- Make the process/development/configuration more simple than previous version.
+- **Less dependencies / JQuery totally removed**
+    
+## License
+MIT License
+
+## Developing the Vue Form Builder
+For hard-core developers, of course, you can clone this repository and then getting started with these steps:
+
+- `npm install` - obviously
+- `npm run serve` - this will run the `main.ts` which is the main web page to see the Vue Form Builder
+
+Then you will know what you can take a look next: configs, components, views,...
+
+## Custom Form Builder
+
+I'm always available for Custom Build based on your needs for the Vue Form Builder. You can contact me via:
+
+- Email: [phattranminh96@gmail.com](mailto:phattranminh96@gmail.com)
+- LinkedIn (On my main profile page)
 
 ## Supporting the project
-If you really like this project & want to contribute a little for the development. You can buy me a coffee. Thank you very much for your supporting <3.
+You can see the lovely `Sponsor` button on the top. If you want to contribute a little, send me a coffee is good enough.
 
-<a href="https://www.buymeacoffee.com/xKOM9NB8p" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+Also, please show your love by giving this repository a ⭐ (star). That would lighten up my day.
 
-Copyright &copy; 2018 by [Seth Phat](http://sethphat.com) aka Phat Tran Minh!
+Copyright &copy; 2018 by [Seth Phat](http://sethphat.com) aka Phat Tran!
